@@ -1,6 +1,15 @@
-<h1>Welcome <%= @user.email %></h1>
-<div id="items" class='items list-group col-md-8'>
-  <%= render @items %>
+<h1><%= "#{@user.name || @user.email}'s todo list."%></h1>
+<div class='row'>
+  <div class='col-md-4 pull-right'>
+    <h3>Rules of Blocitoff</h3>
+    <ul>
+      <li>Don't talk about Blocitoff.</li>
+      <li>You have 7 days to get an item done before it gets deemed unimportant and gets deleted automatically.</li>
+    </ul>
+  </div>
+  <div id="items" class='items list-group col-md-8 pull-left'>
+    <%= render @items %>
+  </div>
 </div>
 <div class='col-md-6'>
   <%= render partial: 'items/form', locals: {user: @user} %>
