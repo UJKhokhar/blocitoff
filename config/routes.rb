@@ -6,6 +6,10 @@ Blocitoff::Application.routes.draw do
     resources :items, only: [:create, :destroy]
   end
 
+  authenticated :user do
+    root to: 'users#show', as: :authenticated_root
+  end 
+
   root to: 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
