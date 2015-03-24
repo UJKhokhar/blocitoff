@@ -1,2 +1,9 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div class='intro-container pull-left'>
+  <h1>Welcome to blocitoff!</h1>
+  <h3>We're here to help you get things done.</h3>
+  <p><%= link_to "Sign up now", new_user_session_path, class: 'btn btn-primary btn-lg' %></p>
+</div>
+<div class='app-info pull-right col-md-4'>
+  <span class='glyphicon glyphicon-list pull-left' aris-hidden='true'></span><p>Sign up and add items to your list.</p>
+  <span class='glyphicon glyphicon-time pull-left' aris-hidden='true'></span><p>You've got 7 days to complete an item, so get moving.</p>
+</div>
