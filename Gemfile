@@ -66,3 +66,5 @@ group :development, :test do
 end
 
 gem 'whenever'
+
+gem 'puma'
