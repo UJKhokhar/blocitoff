@@ -1,5 +1,17 @@
-== Blocitoff App
+== Blocitoff Rails Application
 
-Self-destructing to do list.
+Get things done with this self-destructing to do list.
 
-Created by Umar.
+Items older than 7 days will be deleted.
+
+You can view it live here:
+
+http://ujk-blocitoff.herokuapp.com/
+
+
+== Features to add
+
+* Gamification with merit: https://github.com/merit-gem/merit
+
+* Daily mailer that sends user a friendly reminder of what they need to get done
+  * User email configuration options
