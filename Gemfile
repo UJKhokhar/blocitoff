@@ -54,7 +54,7 @@ end
 
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'puma'
+  gem 'sqlite3'
 end
 
 gem 'figaro', '1.0'
